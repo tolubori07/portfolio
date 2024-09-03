@@ -1,0 +1,9 @@
+---
+import Badge from "./Badge.astro"
+const {name} = Astro.props;
+---
+
+<span class="icon-p">
+  <Badge extclass={"hidden"} text={name}/>
+  <slot/>
+</span>

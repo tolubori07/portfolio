@@ -1,14 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Icon from "../components/Icon.astro";
 ---
 
-<Layout title='about me'>
-<main class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28">
+<Layout title="about me">
+  <main
+    class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28"
+  >
     <div class="font-base">
-      <h1 class="text-4xl text-text">About</h1>
+      <h1 class="text-text mb-8 text-2xl font-heading sm:text-4xl">About</h1>
       <div class="mb-10 text-base sm:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, porro aut eligendi possimus fugiat praesentium architecto sint error tempora ullam quaerat deleniti rerum necessitatibus cumque dolorum culpa, illo voluptatem iure.
+        <p class="text-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+          porro aut eligendi possimus fugiat praesentium architecto sint error
+          tempora ullam quaerat deleniti rerum necessitatibus cumque dolorum
+          culpa, illo voluptatem iure.
+        </p>
+      </div>
+      <div class="mb-16">
+        <h2 class="text-text mb-8 text-xl font-heading sm:text-2xl">Skills</h2>
+        <div>
+          <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">
+            Frontend
+          </h3>
+          <div class="mb-10 flex flex-wrap gap-5">
+              <img src="/html.svg" class="h-8 w-8">
+              <img src="/css.svg" class="h-8 w-8"/>
+              <img src="/js.svg" class="w-8 h-8"/>
+              <img src="/typescript.svg" class="w-8 h-8"/>
+              <img src="/astro.svg" class="h-8 w-8">
+            <img src="/qwik.svg" class="h-8 w-8"/>
+            <img src="/react.svg" class="h-8 w-8"/>
+            <img src="/scss.svg" class="h-8 w-8"/>
+            <img src="/tailwind.svg" class="h-8 w-8"/>
+            <img src="/bootstrap.svg" class="h-8 w-8"/>
+          </div>
+        </div>
+      </div>
+      <div class="mb-16">
+        <div>
+          <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">
+            Backend
+          </h3><div class="mb-10 flex flex-wrap gap-5">
+            <img src="/node.svg" class="h-8 w-8">
+            <img src="/postgres.svg" class="h-8 w-8"/>
+            <img src="/mongo.svg" class="h-8 w-8"/> 
+            <img src="/django.svg" class="h-8 w-8"/>
+            <img src="/docker.svg" class="h-8 w-8"/>
+            <img src="/bun.svg" class="h-8 w-8"/> 
+            <img src="/express.svg" class="h-8 w-8"/>
+            <img src="/drf.svg" class="h-8 w-8"/>
+            <img src="/elysia.svg" alt="" class="h-8 w-8"/>
+            <img src="/drizzle.svg" alt="" class="h-8 w-8">
+            <img src="turso.svg" class="h-8 w-8"/>
+          </div>
+        </div>
+        <div class="mb-16">
+          <div class="">
+            <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">Programming languages</h3>
+            <div class="mb-10 flex flex-wrap gap-5">
+              <img src="/rust.svg" alt="">
+              <img src="/python.svg" alt="">
+              <img src="/c.svg" alt="">
+              <img src="/js.svg" alt="">
+              <img src="/zig.svg" alt="">
+              <img src="/julia.svg" alt="">
+              <img src="/lua.svg" alt="">
+              <img src="/typescript.svg" class="h-8 w-8">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-</main>
+  </main>
 </Layout>
+<style>
+  svg {
+    color: black;
+  }
+</style>
