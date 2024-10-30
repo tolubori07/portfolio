@@ -19,8 +19,8 @@ const { imageSrc, title, description, visitUrl, githubUrl } = Astro.props;
     <img src={imageSrc} alt={title} class="w-full h-84 object-cover" />
   </div>
   <div class="mt-4">
-    <h3 class="font-bold text-2xl text-text">{title}</h3>
-    <p class="text-sm text-gray-800">{description}</p>
+    <h3 class="font-bold text-2xl text-text font-display">{title}</h3>
+    <p class="text-sm text-gray-800 font-display">{description}</p>
   </div>
   <div class="flex mt-4 space-x-4 justify-between">
     <a href={visitUrl} target="_blank" rel="noopener noreferrer">
