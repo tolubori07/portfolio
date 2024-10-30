@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
-const phrases = [
+ const phrases = [
   "Software Engineer",
   "Web developer",
   "Programmer",
@@ -10,8 +10,11 @@ const phrases = [
   "Problem solver",
   "FOSS advocate",
 ];
+const ext = phrases[Math.floor(Math.random() * phrases.length)]
 ---
-
+<script> 
+ 
+</script>
 <Layout title="Home" transition:animate="fade">
   <main
     class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28"
@@ -20,7 +23,7 @@ const phrases = [
       <h1 class="text-text font-heading font-display text-4xl">Jaabir Adeniji-Bello</h1>
       <h3 class="text-text font-body text-2xl">
         {/*Software Engineer, Web developer, Programmer, Computer lover*/}
-        <Badge text={phrases[Math.floor(Math.random() * phrases.length)]} />
+        <Badge text={ext} />
       </h3>
       <div class="mt-8 text-lg text-text sm:text-lg">
         <p>
