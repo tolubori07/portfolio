@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+
+const projects = [
+  {
+    title: "Sellsphere",
+    imageSrc: "/sellsphere.png",
+    description: "An ecommerce site where users can upload and sell their own products, Made using the MERN stack",
+    visitUrl: "https://sellsphere.netlify.app",
+    githubUrl: "https://github.com/tolubori07/Ecommerce",
+  },
+  {
+    title: "Brainstorm",
+    imageSrc: "/code0home.png",
+    description: "A forum site where users can create rooms and talk about their favourite topics, made using the Django web framework",
+    visitUrl: "https://code0.onrender.com",
+    githubUrl: "https://github.com/tolubori07/studybud",
+  },
+  {
+    title: "Weatherio",
+    imageSrc: "/weatherio.png",
+    description: "A weather App capable of displaying weather info about various places. Uses the openweather API, made with React",
+    visitUrl: "https://jaweatherio.netlify.app",
+    githubUrl: "https://github.com/tolubori07/weatherio",
+  },
+  {
+    title: "Zaggi",
+    imageSrc: "/zaggisc.png",
+    description: "An ecommerce website for a clothing brand, made with the Django web framework",
+    visitUrl: "https://zaggi.up.railway.app",
+    githubUrl: "https://github.com/zaggi",
+  },
+];
+---
+
+<Layout title="Projects" transition:animate="fade">
+  <main class="flex flex-col gap-12 items-center mt-32">
+    <h1 class="text-text font-bold text-5xl">Projects</h1>
+    {
+      projects.map((project) => (
+        <Project
+          imageSrc={project.imageSrc}
+          title={project.title}
+          description={project.description}
+          visitUrl={project.visitUrl}
+          githubUrl={project.githubUrl}
+        />
+      ))
+    }
+  </main>
+</Layout>

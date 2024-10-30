@@ -2,9 +2,10 @@
 interface Props {
 	title: string;
 }
-
+import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
 import Navbar from '../components/Navbar.astro';
+
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ import Navbar from '../components/Navbar.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+    <ViewTransitions />
 	</head>
   <body class="bg-bg">
     <Navbar/>
