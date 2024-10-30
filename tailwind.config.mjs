@@ -36,6 +36,9 @@ export default {
         base: "500",
         heading: "800",
       },
+      fontFamily: {
+        display: ['"04B"'],
+      },
     },
   },
 

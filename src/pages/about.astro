@@ -1,7 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import Icon from "../components/Icon.astro";
 ---
 
 <Layout title="about me" transition:animate="fade">
@@ -9,7 +7,9 @@ import Icon from "../components/Icon.astro";
     class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28"
   >
     <div class="font-base">
-      <h1 class="text-text mb-8 text-2xl font-heading sm:text-4xl">About</h1>
+      <h1 class="text-text mb-8 text-2xl font-heading font-display sm:text-4xl">
+        About
+      </h1>
       <div class="mb-10 text-base sm:text-lg">
         <p class="text-text">
           I'm a UK-based web developer and programmer with a deep-seated
@@ -24,7 +24,7 @@ import Icon from "../components/Icon.astro";
         <p class="text-text">
           My passion extends beyond web development to building tools that
           enhance developer workflows. I’ve created Bonk, a CLI utility that
-          simplifies package management and introduces a GUI for package
+          simplifies package management and introduces a TUI for package
           visualization, and developed a range of other tools—including a
           terminal shell in C and Rust, my own programming language, and a text
           editor.
@@ -48,9 +48,15 @@ import Icon from "../components/Icon.astro";
         </p>
       </div>
       <div class="mb-16">
-        <h2 class="text-text mb-8 text-xl font-heading sm:text-2xl">Skills</h2>
+        <h2
+          class="text-text mb-8 text-xl font-heading sm:text-2xl font-display"
+        >
+          Skills
+        </h2>
         <div>
-          <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">
+          <h3
+            class="mb-4 text-lg font-heading sm:text-xl text-text font-display"
+          >
             Frontend
           </h3>
           <div class="mb-10 flex flex-wrap gap-5">
@@ -83,7 +89,9 @@ import Icon from "../components/Icon.astro";
       </div>
       <div class="mb-16">
         <div>
-          <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">
+          <h3
+            class="mb-4 text-lg font-heading sm:text-xl text-text font-display"
+          >
             Backend
           </h3><div class="mb-10 flex flex-wrap gap-5">
             <a href="https://nodejs.org/en"
@@ -121,7 +129,9 @@ import Icon from "../components/Icon.astro";
         </div>
         <div class="mb-16">
           <div class="">
-            <h3 class="mb-4 text-lg font-heading sm:text-xl text-text">
+            <h3
+              class="mb-4 text-lg font-heading sm:text-xl text-text font-display"
+            >
               Programming languages
             </h3>
             <div class="mb-10 flex flex-wrap gap-5">
