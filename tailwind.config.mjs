@@ -37,7 +37,7 @@ export default {
         heading: "800",
       },
       fontFamily: {
-        display: ["04b"],
+        display: ["O4b"],
       },
     },
   },
