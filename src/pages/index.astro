@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Badge from "../components/Badge.astro";
- const phrases = [
+const phrases = [
   "Software Engineer",
   "Web developer",
   "Programmer",
@@ -10,17 +10,18 @@ import Badge from "../components/Badge.astro";
   "Problem solver",
   "FOSS advocate",
 ];
-const ext = phrases[Math.floor(Math.random() * phrases.length)]
+const ext = phrases[Math.floor(Math.random() * phrases.length)];
 ---
-<script> 
- 
-</script>
+
+<script></script>
 <Layout title="Home" transition:animate="fade">
   <main
     class="text-text dark:text-darkText mx-auto w-[750px] max-w-full px-5 pb-10 pt-28"
   >
     <div class="font-base">
-      <h1 class="text-text font-heading font-display text-4xl">Jaabir Adeniji-Bello</h1>
+      <h1 class="text-text font-heading font-display text-4xl">
+        Jaabir Adeniji-Bello
+      </h1>
       <h3 class="text-text font-body text-2xl">
         Software Engineer, Web developer, Programmer, Computer lover
         <Badge text={ext} />
@@ -114,11 +115,7 @@ const ext = phrases[Math.floor(Math.random() * phrases.length)]
         >
 
         <a href="https://exercism.org/profiles/tolubori07">
-          <img
-            src="/exercism.svg"
-            alt=""
-            class="h-[1.5rem] w-[1.5rem]"
-          />
+          <img src="/exercism.svg" alt="" class="h-[1.5rem] w-[1.5rem]" />
         </a>
       </div>
     </div>

@@ -5,7 +5,7 @@ interface Props {
 import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
 import Navbar from '../components/Navbar.astro';
-
+import '../styles/global.css'
 ---
 
 <!doctype html>
@@ -19,14 +19,7 @@ import Navbar from '../components/Navbar.astro';
 		<title>{title}</title>
     <ViewTransitions />
     <style>
-      @font-face {
-        font-family: 04b;
-        src: url('/04b.ttf');
-      }
-      .font-display{ 
-        font-family: 04b;
-      }
-    </style>
+         </style>
 	</head>
   <body class="bg-bg font-body">
     <Navbar/>

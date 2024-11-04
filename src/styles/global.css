@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 04b;
+  src: url("/04b.ttf");
+}
+.font-display {
+  font-family: 04b;
+}
