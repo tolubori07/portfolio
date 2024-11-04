@@ -18,6 +18,15 @@ import Navbar from '../components/Navbar.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
     <ViewTransitions />
+    <style>
+      @font-face {
+        font-family: 04b;
+        src: url('/04b.ttf');
+      }
+      .font-display{ 
+        font-family: 04b;
+      }
+    </style>
 	</head>
   <body class="bg-bg font-body">
     <Navbar/>
