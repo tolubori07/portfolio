@@ -1,7 +1,7 @@
 ---
-const {text,extclass} = Astro.props;
+const {text,id} = Astro.props;
 ---
 
-<div class={`font-display w-fit rounded-base border-2 text-text border-border dark:border-darkBorder bg-main px-3 py-1.5 text-sm font-base`}>
+<div id={id} class={`font-display w-fit rounded-base border-2 text-text border-border dark:border-darkBorder bg-main px-3 py-1.5 text-sm font-base`}>
   {text}
 </div>
