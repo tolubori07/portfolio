@@ -10,7 +10,12 @@ const phrases = [
   "Problem solver",
   "FOSS advocate",
 ];
-const ext = phrases[Math.floor(Math.random() * phrases.length)];
+
+function getRandomPhrase() {
+  return phrases[Math.floor(Math.random() * phrases.length)];
+}
+
+const ext = getRandomPhrase();
 ---
 
 <script></script>
