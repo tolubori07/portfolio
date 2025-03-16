@@ -13,13 +13,13 @@ const { imageSrc, title, description, visitUrl, githubUrl } = Astro.props;
 ---
 
 <div
-  class="border-border border-4 shadow-light dark:shadow-dark rounded-base bg-main dark:bg-main rounded-lg p-8 min-w-sm w-1/2"
+  class="border-border border-4 shadow-light dark:shadow-dark rounded-base bg-main dark:bg-main rounded-lg p-8 sm:p-4 md:p-4 lg:p-8 xl:p-8 min-w-sm w-1/2 sm:w-3/4 md:w-3/4 lg:w-1/2 xl:w-1/2"
 >
   <div class="bg-white rounded-lg overflow-hidden border-4 border-border">
     <img src={imageSrc} alt={title} class="w-full h-84 object-cover" />
   </div>
   <div class="mt-4">
-    <h3 class="font-bold text-2xl text-text font-display">{title}</h3>
+    <h3 class="font-bold text-xl text-text font-display">{title}</h3>
     <p class="text-sm text-gray-800 font-display">{description}</p>
   </div>
   <div
