@@ -2,6 +2,22 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    screens: {
+      sm: "350px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "1024px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1280px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1536px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       colors: {
         main: "#7fbc8c",
@@ -36,10 +52,10 @@ export default {
         base: "500",
         heading: "800",
       },
-      fontFamily:{
+      fontFamily: {
         display: ["'04b'"],
-        body: ["'false'"]
-      }
+        body: ["'false'"],
+      },
     },
   },
 

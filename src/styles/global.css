@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 04b;
-  src: url("/04b.ttf");
+  font-family: '04b';
+  src: url("/04b.ttf") format('truetype');
 }
 .font-display {
   font-family: 04b;
